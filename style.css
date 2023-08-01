@@ -2,10 +2,9 @@
     background-image: url(images/comic-img1.jpg);
     height:80vh;
     width: 80vw;
-    background-repeat: cover;
+    background-size: cover;
     margin: auto;
     animation: slide-1 20s linear infinite;
-
 }
 @keyframes slide-1{
     0%{background-image: url(images/comic-img1.jpg);}
@@ -47,4 +46,14 @@
     0%{background-image: url(images/comic-img7.jpg);}
     50%{background-image: url(images/comic-img8.jpg);}
     100%{background-image: url(images/comic-img9.jpg);}
+}
+.slider3{
+    background-image: url(images/comic-img1.jpg);
+    height:80vh;
+    width: 80vw;
+    background-size: contain;
+    margin: auto;
+}
+.slider3:hover{
+    animation: slide-2 20s linear infinite;
 }
