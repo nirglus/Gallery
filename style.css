@@ -1,14 +1,50 @@
 .slider1{
-    background-image: url(images/comic-img2.jpg);
+    background-image: url(images/comic-img1.jpg);
     height:80vh;
     width: 80vw;
-    background-repeat: no-repeat;
+    background-repeat: cover;
     margin: auto;
     animation: slide-1 20s linear infinite;
 
 }
 @keyframes slide-1{
-    0%{background-image: url(images/comic-img2.jpg);}
-    50%{background-image: url(images/comic-img3.jpg);}
-    100%{background-image: url(images/comic-img4.jpg);}
+    0%{background-image: url(images/comic-img1.jpg);}
+    50%{background-image: url(images/comic-img2.jpg);}
+    100%{background-image: url(images/comic-img3.jpg);}
+}
+.slider2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:80vh;
+    gap: 2vw;
+}
+.sl2-img1, .sl2-img2, .sl2-img3{
+    width:33%;
+    height:40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sl2-img1{
+    background-image: url(images/comic-img1.jpg);
+    animation: slide-1 20s linear infinite;
+}
+.sl2-img2{
+    background-image: url(images/comic-img4.jpg);
+    animation: slide-2 20s linear infinite;
+}
+.sl2-img3{
+    background-image: url(images/comic-img7.jpg);
+    animation: slide-3 20s linear infinite;
+}
+@keyframes slide-2{
+    0%{background-image: url(images/comic-img4.jpg);}
+    50%{background-image: url(images/comic-img5.jpg);}
+    100%{background-image: url(images/comic-img6.jpg);}
+}
+@keyframes slide-3{
+    0%{background-image: url(images/comic-img7.jpg);}
+    50%{background-image: url(images/comic-img8.jpg);}
+    100%{background-image: url(images/comic-img9.jpg);}
 }
