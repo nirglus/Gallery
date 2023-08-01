@@ -1,0 +1,14 @@
+.slider1{
+    background-image: url(images/comic-img2.jpg);
+    height:80vh;
+    width: 80vw;
+    background-repeat: no-repeat;
+    margin: auto;
+    animation: slide-1 20s linear infinite;
+
+}
+@keyframes slide-1{
+    0%{background-image: url(images/comic-img2.jpg);}
+    50%{background-image: url(images/comic-img3.jpg);}
+    100%{background-image: url(images/comic-img4.jpg);}
+}
