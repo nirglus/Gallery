@@ -57,3 +57,21 @@
 .slider3:hover{
     animation: slide-2 20s linear infinite;
 }
+.slider4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/comic-img1.jpg);
+    height:80vh;
+    width: 80vw;
+    background-size: contain;
+    margin: auto;
+    margin-top:20vh;
+    animation: slide-3 10s;
+}
+#l-side:checked + .slider4{
+    animation-direction: reverse;
+}
+#r-side:checked + .slider4{
+    animation-direction: normal;
+}
