@@ -1,4 +1,6 @@
-
+body{
+    background-image: url("https://i.pinimg.com/736x/d6/fd/02/d6fd0226f04900a5e8c05ce8bdb53cf8.jpg");
+}
 .slider1{
     background-image: url(images/comic-img1.jpg);
     height:80vh;
