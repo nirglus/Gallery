@@ -128,19 +128,32 @@ input[type="radio"]{
 /*Task 6*/
 .slider6{
     display: flex;
-    gap:5vw;
     flex-wrap: nowrap;
     flex-direction: row;
 }
     
 .wrapper{
+    display: flex;
     overflow: hidden;
+    gap:4vw;
     height:40vh;
+    justify-content: center;
 }
 
 .slider6 img{
     width:30%;
     height:40vh;
 }
-
-
+@keyframes slide-6{
+    0%{transform: translate(0,0); overflow: hidden;}
+    10%{overflow:unset;}
+    11%{transform: translate(-100vw,0)}
+    30%{transform: translate(-200vw,0)}
+    100%{transform: translate(-200vw,0); overflow:unset;}
+}
+.r-radio3:checked + .wrapper{
+    animation: slide-6 10s infinite;
+}
+.l-radio3:checked + .wrapper{
+    animation: slide-6 10s infinite reverse;
+}
