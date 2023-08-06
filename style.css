@@ -125,4 +125,22 @@ input[type="radio"]{
     animation: slide-3 10s infinite;
     animation-direction: reverse;
 }
+/*Task 6*/
+.slider6{
+    display: flex;
+    gap:5vw;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+    
+.wrapper{
+    overflow: hidden;
+    height:40vh;
+}
+
+.slider6 img{
+    width:30%;
+    height:40vh;
+}
+
 
