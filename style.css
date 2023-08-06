@@ -117,7 +117,7 @@ input[type="radio"]{
     animation: slide-1 10s infinite;
     animation-direction: reverse;
 }
-#l-radio2:hover + .sl2-img22{
+ #l-radio2:hover + .sl2-img22{
     animation: slide-2 10s infinite;
     animation-direction: reverse;
 }
@@ -125,3 +125,4 @@ input[type="radio"]{
     animation: slide-3 10s infinite;
     animation-direction: reverse;
 }
+
