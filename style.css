@@ -87,6 +87,10 @@ input[type="radio"]{
     animation-direction: reverse;
 }
 /* Task 5 */
+.slider5{
+    display: flex;
+    align-items: center;
+}
 .sl2-img12{
     background-image: url(images/comic-img1.jpg);
     width:30%;
