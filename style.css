@@ -60,6 +60,7 @@ body{
 .slider3:hover{
     animation: slide-2 20s linear infinite;
 }
+/* Task 4 */
 .slider4{
     display: flex;
     align-items: center;
@@ -107,21 +108,21 @@ input[type="radio"]{
     align-items: center;
     flex-direction: row;
 }
-.sl2-img12{
+#img1{
     background-image: url(images/comic-img1.jpg);
     width:30%;
     height:40vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sl2-img22{
+#img2{
     background-image: url(images/comic-img4.jpg);
     width:30%;
     height:40vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sl2-img32{
+#img3{
     background-image: url(images/comic-img7.jpg);
     width:30%;
     height:40vh;
@@ -131,18 +132,29 @@ input[type="radio"]{
 #r-radio2{
     order: 2;
 }
-
-#l-radio2:hover ~ .sl2-img12{
+#l-radio2:hover ~ #img1{
     animation: slide-1 10s infinite;
-    animation-direction: reverse;
+    animation-direction: alternate-reverse;
 }
- #l-radio2:hover ~ .sl2-img22{
+#r-radio2:hover ~ #img1{
+    animation: slide-1 10s infinite;
+    animation-direction: normal;
+}
+#l-radio2:hover ~ #img2{
     animation: slide-2 10s infinite;
     animation-direction: reverse;
 }
-#l-radio2:hover ~ .sl2-img32{
+#r-radio2:hover ~ #img2{
+    animation: slide-2 10s infinite;
+    animation-direction: normal;
+}
+#l-radio2:hover ~ .sl2-img3{
     animation: slide-3 10s infinite;
     animation-direction: reverse;
+}
+#r-radio2:hover ~ #img3{
+    animation: slide-3 10s infinite;
+    animation-direction: normal;
 }
 
 /*Task 6*/
