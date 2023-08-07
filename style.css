@@ -71,6 +71,12 @@ body{
 .fa{
     color: #fff;
 }
+.fa-arrow-left{
+    transform: translateX(-4vw);
+}
+.fa-arrow-right{
+    transform: translateX(4vw);
+}
 #rightRadio{
     order: 2;
 }
@@ -84,6 +90,8 @@ body{
 input[type="radio"]{
     width:5vw;
     height:15vh;
+    appearance: none;
+    z-index: 10;
 }
 #l-radio:hover ~ #animation-11{
     animation: slide-3 10s infinite;
