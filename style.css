@@ -105,6 +105,7 @@ input[type="radio"]{
 .slider5{
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 .sl2-img12{
     background-image: url(images/comic-img1.jpg);
@@ -127,19 +128,23 @@ input[type="radio"]{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#r-radio2{
+    order: 2;
+}
 
-#l-radio2:hover + .sl2-img12{
+#l-radio2:hover ~ .sl2-img12{
     animation: slide-1 10s infinite;
     animation-direction: reverse;
 }
- #l-radio2:hover + .sl2-img22{
+ #l-radio2:hover ~ .sl2-img22{
     animation: slide-2 10s infinite;
     animation-direction: reverse;
 }
-#l-radio2:hover + .sl2-img32{
+#l-radio2:hover ~ .sl2-img32{
     animation: slide-3 10s infinite;
     animation-direction: reverse;
 }
+
 /*Task 6*/
 .slider6{
     display: flex;
