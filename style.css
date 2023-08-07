@@ -68,6 +68,9 @@ body{
     margin-top:20vh;
     flex-direction: row;
 }
+.fa{
+    color: #fff;
+}
 #rightRadio{
     order: 2;
 }
