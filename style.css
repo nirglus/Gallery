@@ -131,6 +131,17 @@ input[type="radio"]{
 }
 #r-radio2{
     order: 2;
+    width:8vw;
+}
+#l-radio2{
+    width:8vw;
+}
+#slide5-r-arrow{
+    transform: translate(-7vw,0);
+    order:2;
+}
+#slide5-l-arrow{
+    transform: translate(7vw,0);
 }
 #l-radio2:hover ~ #img1{
     animation: slide-1 10s infinite;
@@ -148,7 +159,7 @@ input[type="radio"]{
     animation: slide-2 10s infinite;
     animation-direction: normal;
 }
-#l-radio2:hover ~ .sl2-img3{
+#l-radio2:hover ~ #img3{
     animation: slide-3 10s infinite;
     animation-direction: reverse;
 }
