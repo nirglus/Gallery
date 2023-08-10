@@ -201,11 +201,11 @@ input[type="radio"]{
 
 @keyframes slide-6-reverse{
     0%{transform: translateX(0)}
-    100%{transform: translateX(calc(-250px * 9))}
+    100%{transform: translateX(calc(-30% * 8))}
 }
 @keyframes slide-6-forward{
     0%{transform: translateX(0)}
-    100%{transform: translateX(calc(250px * 9))}
+    100%{transform: translateX(calc(30% * 8))}
 }
 @keyframes remove-overflow{
     0%{overflow: hidden;}
