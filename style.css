@@ -99,8 +99,8 @@ input[type="radio"]{
     animation-direction: reverse;
 }
 #rightRadio:hover ~ #animation-11{
-    animation: slide-2 10s infinite;
-    animation-direction: reverse;
+    animation: slide-3 10s infinite;
+    animation-direction: normal;
 }
 /* Task 5 */
 .slider5{
@@ -166,26 +166,50 @@ input[type="radio"]{
     
 .wrapper{
     display: flex;
-    overflow: hidden;
-    gap:4vw;
+    width:90%;
+    gap:3vw;
     height:40vh;
     justify-content: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width:calc(30% * 9);    
 }
 
 .slider6 img{
     width:30%;
     height:40vh;
+    padding:2vw;
 }
-@keyframes slide-6{
-    0%{transform: translate(0,0); overflow: hidden;}
-    10%{overflow:unset;}
-    11%{transform: translate(-100vw,0)}
-    30%{transform: translate(-200vw,0)}
-    100%{transform: translate(-200vw,0); overflow:unset;}
+#r-radio3{
+    order:3;
+    position: absolute;
+    transform: translateX(50vw);
 }
-.r-radio3:checked + .wrapper{
-    animation: slide-6 10s infinite;
+
+@keyframes slide-6-reverse{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(calc(-250px * 9))}
 }
-.l-radio3:checked + .wrapper{
-    animation: slide-6 10s infinite reverse;
+@keyframes slide-6-forward{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(calc(250px * 9))}
 }
+@keyframes remove-overflow{
+    0%{overflow: hidden;}
+    100%{overflow: unset;}
+}
+
+#r-radio3:hover ~ #slide-trk{
+    animation: slide-6-forward 10s infinite;
+    animation-direction: normal;
+}
+#r-radio3:hover ~ .wrapper{
+    animation: remove-overflow 10s infinite;
+}
+#l-radio3:hover ~ #slide-trk{
+    animation: slide-6-reverse 10s infinite reverse;
+    animation-direction: normal;
+}
+
